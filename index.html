@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IndexedDB CRUD</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm" class="mt-4">
+        <div class="mb-3">
+          <input type="text" id="idInput" class="form-control" placeholder="ID" required />
+        </div>
+        <div class="mb-3">
+          <input type="text" id="nameInput" class="form-control" placeholder="Name" required />
+        </div>
+        <div class="mb-3">
+          <button onclick="addContact()" class="btn btn-primary">Add</button>
+          <!-- <button onclick="editContact()" class="btn btn-primary">Edit</button> -->
+        </div>
+      </form>
+
+      <table id="dataTable" class="table table-striped mt-4">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
